@@ -1,0 +1,59 @@
+2024-09-02 09:57:27.444 [info] [main] Log level: Info
+2024-09-02 09:57:27.444 [info] [main] Validating found git in: "git"
+2024-09-02 09:57:27.444 [info] [main] Using git "2.46.0" from "git"
+2024-09-02 09:57:27.444 [info] [Model][doInitialScan] Initial repository scan started
+2024-09-02 09:57:27.444 [info] > git rev-parse --show-toplevel [39ms]
+2024-09-02 09:57:27.444 [info] > git rev-parse --git-dir --git-common-dir [5ms]
+2024-09-02 09:57:27.444 [info] [Model][openRepository] Opened repository: /home/hat/clone/website
+2024-09-02 09:57:27.479 [info] > git rev-parse --show-toplevel [12ms]
+2024-09-02 09:57:27.482 [info] > git config --get commit.template [25ms]
+2024-09-02 09:57:27.517 [info] > git rev-parse --show-toplevel [20ms]
+2024-09-02 09:57:27.596 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [89ms]
+2024-09-02 09:57:27.639 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hat/clone/website/.git/refs/remotes/origin/main'
+2024-09-02 09:57:27.640 [info] > git rev-parse --show-toplevel [45ms]
+2024-09-02 09:57:27.641 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-09-02 09:57:27.666 [info] > git rev-parse refs/remotes/origin/main [27ms]
+2024-09-02 09:57:27.727 [info] > git status -z -uall [38ms]
+2024-09-02 09:57:27.777 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [36ms]
+2024-09-02 09:57:27.791 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-09-02 09:57:27.791 [warning] [Git][config] git config failed: Failed to execute git
+2024-09-02 09:57:27.798 [info] > git config --get commit.template [21ms]
+2024-09-02 09:57:27.808 [info] > git reflog main --grep-reflog=branch: Created from *. [11ms]
+2024-09-02 09:57:27.814 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [9ms]
+2024-09-02 09:57:27.820 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hat/clone/website/.git/refs/remotes/origin/main'
+2024-09-02 09:57:27.822 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [8ms]
+2024-09-02 09:57:27.856 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [27ms]
+2024-09-02 09:57:27.866 [info] > git rev-parse refs/remotes/origin/main [46ms]
+2024-09-02 09:57:27.874 [info] > git config --local branch.main.vscode-merge-base origin/main [9ms]
+2024-09-02 09:57:27.884 [info] > git status -z -uall [12ms] (cancelled)
+2024-09-02 09:57:27.886 [info] > git config --get commit.template [2ms]
+2024-09-02 09:57:27.895 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-09-02 09:57:27.902 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hat/clone/website/.git/refs/remotes/origin/main'
+2024-09-02 09:57:27.907 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-09-02 09:57:27.947 [info] > git status -z -uall [34ms]
+2024-09-02 09:57:27.975 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [14ms]
+2024-09-02 09:57:27.988 [info] > git config --local branch.main.vscode-merge-base [2ms]
+2024-09-02 09:57:28.009 [info] > git merge-base refs/heads/main refs/remotes/origin/main [36ms]
+2024-09-02 09:57:28.018 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [10ms]
+2024-09-02 09:57:28.020 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [4ms]
+2024-09-02 09:57:28.038 [info] > git check-ignore -v -z --stdin [3ms]
+2024-09-02 09:57:28.039 [info] > git diff --name-status -z --diff-filter=ADMR 5193d0ac381acd05adc1757fe58c64f62fc73acc...refs/remotes/origin/main [12ms]
+2024-09-02 09:57:29.135 [info] > git show --textconv :index.html [39ms]
+2024-09-02 09:57:29.135 [info] > git ls-files --stage -- /home/hat/clone/website/index.html [27ms]
+2024-09-02 09:57:29.193 [info] > git cat-file -s 7f4774e2017fd66e3138709645e61f79ba4da0fd [51ms]
+2024-09-02 09:58:56.930 [info] > git config --get commit.template [9ms]
+2024-09-02 09:58:56.932 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-09-02 09:58:56.938 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hat/clone/website/.git/refs/remotes/origin/main'
+2024-09-02 09:58:56.940 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2024-09-02 09:58:56.977 [info] > git status -z -uall [31ms]
+2024-09-02 09:58:56.993 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [8ms]
+2024-09-02 09:58:57.003 [info] > git config --local branch.main.vscode-merge-base [2ms]
+2024-09-02 09:58:57.014 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [2ms]
+2024-09-02 10:01:28.265 [info] > git config --get commit.template [4ms]
+2024-09-02 10:01:28.281 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-09-02 10:01:28.299 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hat/clone/website/.git/refs/remotes/origin/main'
+2024-09-02 10:01:28.300 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-09-02 10:01:28.344 [info] > git status -z -uall [35ms]
+2024-09-02 10:01:28.370 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [15ms]
+2024-09-02 10:01:28.397 [info] > git config --local branch.main.vscode-merge-base [12ms]
+2024-09-02 10:01:28.424 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [8ms]

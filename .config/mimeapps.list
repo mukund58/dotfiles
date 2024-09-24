@@ -1,0 +1,6 @@
+[Added Associations]
+application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;sioyek.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop._775d011521ed40ae726659ddd1198215.desktop;
+
+[Default Applications]
+x-scheme-handler/tonsite=org.telegram.desktop._775d011521ed40ae726659ddd1198215.desktop

@@ -1,0 +1,5 @@
+2024-08-11 16:35:05.590 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/hat/code/assigment-2/employee.cpp","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-08-11 16:35:06.579 [info] Started local extension host with pid 18367.
+2024-08-11 16:35:07.526 [info] Started initializing default profile extensions in extensions installation folder. file:///home/hat/.vscode-oss/extensions
+2024-08-11 16:35:08.739 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/hat/.vscode-oss/extensions
+2024-08-11 16:35:12.562 [info] [perf] Render performance baseline is 67ms
