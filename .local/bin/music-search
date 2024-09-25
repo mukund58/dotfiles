@@ -1,0 +1,31 @@
+#!/bin/sh
+INVIDIOUS_INSTANCE="https://vid.puffyan.us" # some instances might not work
+
+echo "==>which did you like to play ;)  "
+read audio_input
+
+# Audio confirmation notification
+google_speech " All right.. let me play.. $audio_input" & 
+
+
+# make youtube search query
+query="$(printf '%s' "song audio $audio_input" | tr ' ' '+' )"
+
+# search on invidous (youtube) instance for video id to make a url
+video_id="$(curl -s "$INVIDIOUS_INSTANCE/search?q=$query" | grep -Eo "watch\?v=.{11}" | head -n 1)"
+youtube_url="https://youtube.com/$video_id"
+
+# get url for bestaudio stream from the youtube video
+audio_url="$(yt-dlp -f bestaudio --get-url "$youtube_url")"
+
+title=$(yt-dlp --get-title "$youtube_url")
+notify-send "Playing: " "$title"
+
+  
+
+# add the track to mpd and play
+mpv $audio_url
+
+# Get youtube video title for system notification
+#title=$(yt-dlp --get-title "$youtube_url")
+#notify-send "Playing: " "$title"

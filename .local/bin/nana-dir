@@ -1,0 +1,2 @@
+nano "$(find -type d | fzf)"
+

@@ -1,0 +1,11 @@
+
+#echo "what's your query ?"
+#que=$( dmenu -p "Ask anything")
+#read que
+
+
+#ans=$(gemini-cli --key "AIzaSyBwb_a2r7OpP25DG7MQM_B0qs9Cz-_E9Ec" prompt  "tell me one quote of Bhagvat gita")
+ans=$( tgpt "tell one small and short quote of gita")
+
+notify-send "$ans"
+ google_speech "$ans"

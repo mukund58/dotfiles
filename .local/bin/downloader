@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Enter your link"
+read from 
+read end
+read link
+seq $form  $end | xargs -I{} -n 1 aria2c "link"

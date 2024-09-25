@@ -1,0 +1,7 @@
+#!/bin/sh
+ #!/bin/sh                         130 ↵
+
+VOSK_MODEL_PATH="$HOME/.local/share/music_fairy/vosk-model-small-en-us-0.15/"
+ffmpeg -y -i "$INPUT_VIDEO" -acodec pcm_s16le -ac 1 -ar 410 "$OUTPUT_AU
+DIO"
+

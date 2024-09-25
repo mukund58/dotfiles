@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Store the image file path in a variable
+image_path="$1"
+
+# Set wallpaper using xwallpaper
+xwallpaper --zoom "$image_path"
+
+# Generate color scheme using pywal
+wal -i "$image_path"
+
+xdotool key super+F5

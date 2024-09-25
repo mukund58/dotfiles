@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#text=$(echo "write you want to be readed ><"  | dmenu -p  "enter text")
+
+#echo "$text" | tr -d '\n' | sed -e '2,$s/\./ /g' | \
+#  ./piper --model en_US-libritts-high.onnx --output-raw  --speed 0.05 | \
+#  aplay -r 22050 -f S16_LE -t raw - >/dev/null
+
+read text
+echo "$text" | tr -d '\n' | sed -e '2,$s/\./ /g' | \
+  piper --model ~/.git-clone/app/piper/en_US-libritts-high.onnx --output-raw  --speed 0.05 | \
+  aplay -r 22050 -f S16_LE -t raw - >/dev/null
+

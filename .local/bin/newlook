@@ -1,0 +1,18 @@
+#!/bin/sh
+
+
+	echo "Chossing a random wallpaper"
+	wall=$(find ~/pix/wall -type f -name "*.jpg" -o -name "*.png"|shuf -n 1)
+	echo  "adding wallpaper"
+	xwallpaper --zoom "$wall"
+
+	echo "genrate color scheme"
+	wal -c
+	wal -i $wall
+	wal -i $wall >/dev/null
+	#sed -i 'N;$!P;D' $HOME/.cache/wal/colors-wal-dwm.h
+
+	#echo "Recompiling dwm with new color"
+	#(cd $HOME/.local/src/dwm && sudo make clean install>/dev/null)
+	#echo "XD Restart dwm for NEW LOOK ><"	
+        xdotool key super+F5
