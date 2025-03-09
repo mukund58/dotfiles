@@ -1,0 +1,9 @@
+
+#echo "what's your query ?"
+que=$( dmenu -p "Ask anything")
+#read que
+
+
+ans=$(gemini-cli --key "AIzaSyCcXGBUn8oorDtGN68ay55LahfBWCZMdZw" prompt  $que  )
+
+ google_speech "$ans"

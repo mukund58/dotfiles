@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo nohup java -jar /home/hat/.TLauncher-2.895/dist/TLauncher-2.895.jar > /home/hat/.TLauncher-2.895/dist/TLauncher.out
+
+ 

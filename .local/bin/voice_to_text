@@ -1,0 +1,11 @@
+#!/bin/sh
+
+VOSK_MODEL_PATH="$HOME/.local/share/music_fairy/vosk-model-small-en-us-0.15/"
+
+ffmpeg -y -f alsa -i default -acodec pcm_s16le -ac 1 -ar 44100 -t 7 -f wav ~/.cache/audio.wav 
+#vosk-transcriber -m ~/.local/share/music_fairy/vosk-model-small-en-in-0.4 -i ~/.cache/audio.wav -o ~/.cache/transcript.txt     130 ↵
+vosk-transcriber -m $VOSK_MODEL_PATH -i ~/.cache/audio.wav -o ~/.cache/audio_text.txt
+
+cat ~/.cache/audio_text.txt
+
+

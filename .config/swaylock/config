@@ -1,0 +1,28 @@
+# Set the background to transparent
+color = 00000000
+
+# Set the indicator radius and thickness
+indicator-radius = 80
+indicator-thickness = 10
+
+# Set the background image (use the correct path to your image)
+image = ~/pix/wall/bg.jpg
+
+# Set the font and size (optional, for customization)
+font = Iosevka Term 20
+
+# Additional customization options
+text-color = f7f7f7
+ring-color = f7f7f7
+line-color = f7f7f7
+inside-color = 252525
+
+# If you want to show failed attempts or debug info (optional)
+show-failed-attempts = true
+debug = true
+
+# Optional: you can set other colors for interaction states
+line-wrong-color = ce5252
+ring-wrong-color = ce5252
+text-wrong-color = ce5252
+inside-wrong-color = f7f7f7

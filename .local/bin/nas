@@ -1,0 +1,25 @@
+#!/bin/sh
+user=$1
+
+# Fail script if not root
+if [ "$(id -u)" != "0" ]; then
+    printf "ERROR: Must be run as root \n"
+    printf "Try running 'doas nas-user' \n"
+    return 2
+fi
+
+if [ "$user" == "" ]
+then
+    printf "ERROR: Username not provided \n"
+    printf "Expected: 'nas-user [username]' \n"
+    return 1
+else
+    # Try to add a Unix user with no password and part of nas group
+    # Then set password with passwd command.
+    adduser $user -D -G nas 1&> /dev/null || true && \
+    passwd $user && \
+
+    # Do the same with Samba
+    smbpasswd -a $user && \
+    return 0
+fi

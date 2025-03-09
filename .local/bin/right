@@ -1,0 +1,2 @@
+#!/bin/sh
+xdotool mousemove_relative -- 10 0

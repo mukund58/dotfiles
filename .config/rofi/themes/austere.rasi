@@ -1,0 +1,94 @@
+/*******************************************************************************
+ * ROFI ONELINE THEME USING THE Austere COLOR PALETTE
+ * User                 : alexjercan
+ * Theme Repo           : https://github.com/alexjercan/darker-hyprland-theme
+ *******************************************************************************/
+
+* {
+    col0:     #252525;
+    col1:     #ce5252;
+    col2:     #8c9440;
+    col3:     #f0c674;
+
+    col4:     #5f819d;
+    col5:     #e3e3e3;
+    col6:     #8e8e8e;
+    col7:     #f7f7f7;
+
+    col8:     #7c7c7c;
+    col9:     #ce5252;
+    col10:    #8c9440;
+    col11:    #f0c674;
+
+    col12:    #5f819d;
+    col13:    #e3e3e3;
+    col14:    #8e8e8e;
+    col15:    #f7f7f7;
+
+    cursor:             #b9b9b9;
+    background:         #101010;
+    foreground:         #f7f7f7;
+    bg-selected:        #252525;
+    fg-selected:        #7c7c7c;
+
+    text-color:         @foreground;
+    background-color:   @background;
+
+    width:      30em;
+    margin:     0px;
+    padding:    0px;
+    spacing:    2px;
+}
+
+window {
+    location:   center;
+    anchor:     center;
+    height:     60%;
+    border:     0px;
+    margin:     0px;
+    padding:    0px;
+}
+
+inputbar {
+    padding:    8px 12px;
+    spacing:    12px;
+    children:   [ prompt, entry ];
+}
+
+prompt,
+entry,
+listview,
+element,
+element-text,
+element-icon {
+    background-color: transparent;
+}
+
+prompt {
+    text-color: @col4;
+}
+
+listview {
+    lines:      8;
+    columns:    1;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    8px;
+    spacing:    8px;
+}
+
+element selected {
+    background-color: @col4;
+    text-color: @col0;
+}
+
+element-icon {
+    size:   0.75em;
+}
+
+element-text {
+    text-color: inherit;
+}

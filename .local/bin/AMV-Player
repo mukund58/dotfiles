@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+youtubeurl=$(curl 'https://vid.puffyan.us/search?q=anime+amv+song&page=1&date=none&type=video&duration=short&sort=relevance' --compressed -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0')
+     
+randurl=$(echo $youtubeurl | pup 'div.video-card-row a' | sed -n 's/.*href="\([^"]*\)".*/\1/p'  | grep -o '/watch?v=[^"]*'| shuf -n 1 )
+
+#ytlink=$(https://www.youtube.com/$randurl)
+mpv https://www.youtube.com/$randurl
+
+#mpv $ytlink

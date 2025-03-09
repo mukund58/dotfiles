@@ -1,0 +1,10 @@
+#!/bin/bash
+# Directory containing wallpaers
+WALLPAER_DIR="$HOME/pix/live"
+# Change wallpaper every 30 minutes
+while true; do
+ # Select a random wallpaper
+ WALLPAER=$(ls $WALLPAER_DIR | shuf -n 1)
+ # Set the wallpaper
+ feh --bg-scale "$WALLPAER_DIR/$WALLPAER"
+ 

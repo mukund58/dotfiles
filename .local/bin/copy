@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Enter path where to copy"
+read -e -p "Enter a path: " copy_path
+
+
+find . -type f  | fzf -m | xargs -I {} cp {}  $copy_path
+
+notify-send "$copy_path"

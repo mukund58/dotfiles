@@ -1,0 +1,60 @@
+window {
+    font-family: Iosevka Term;
+    font-size: 14pt;
+    color: #a0a0a0; /* text */
+    background-color: rgba(16, 16, 16, 0.5);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(16, 16, 16, 0.1);
+}
+
+button:focus {
+    background-color: #252525;
+    color: #b9b9b9;
+}
+
+#lock {
+    background-image: image(url("./lock.png"));
+}
+#lock:focus {
+    background-image: image(url("./lock.png"));
+}
+
+#logout {
+    background-image: image(url("./logout.png"));
+}
+#logout:focus {
+    background-image: image(url("./logout.png"));
+}
+
+#suspend {
+    background-image: image(url("./sleep.png"));
+}
+#suspend:focus {
+    background-image: image(url("./sleep.png"));
+}
+
+#shutdown {
+    background-image: image(url("./power.png"));
+}
+#shutdown:focus {
+    background-image: image(url("./power.png"));
+}
+
+#reboot {
+    background-image: image(url("./restart.png"));
+}
+#reboot:focus {
+    background-image: image(url("./restart.png"));
+}

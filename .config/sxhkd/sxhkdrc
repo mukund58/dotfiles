@@ -1,0 +1,20 @@
+# Move mouse left (Num 4)
+KP_Left
+    xdotool mousemove_relative -- -10 0
+
+# Move mouse right (Num 6)
+KP_Right
+    xdotool mousemove_relative 10 0
+
+# Move mouse up (Num 8)
+KP_Up
+    xdotool mousemove_relative 0 -10
+
+# Move mouse down (Num 2)
+KP_Down
+    xdotool mousemove_relative 0 10
+
+# Left click (Num 5)
+KP_Begin
+    xdotool click 1
+

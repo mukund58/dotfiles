@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#google_speech " Here's pikachu!" 
+
+tgpt -i
+
+#cat ~/.cache/ans.txt | sed -e 's/.*/\x1b[1;33m&\x1b[0m/' | tr -d '.'
+
+
+#cat ~/.cache/ans.txt| tr -d '\n' | sed -e '2,$s/\./ /g' | \
+#  ./piper --model en_US-libritts-high.onnx --output-raw | \
+#  aplay -r 22050 -f S16_LE -t raw - >/dev/null
+
+
