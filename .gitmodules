@@ -1,0 +1,3 @@
+[submodule ".local/src/.local/src/dwm"]
+	path = .local/src/.local/src/dwm
+	url = https://github.com/mukund58/dwm.git
