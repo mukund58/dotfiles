@@ -5,7 +5,14 @@
   <br />
 </div>
 
+## Getting Started
 
+To clone this repository **with all submodules**, run:
+
+```bash
+git clone --recurse-submodules https://github.com/mukund58/dotfiles.git
+```
+This ensures that all nested repositories are cloned correctly.
 
 ## Screenshots
 
